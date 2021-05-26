@@ -7,7 +7,7 @@ int main( int argc, char *argv[]){
     MPI_Comm_rank(MPI_COMM_WORLD,&rank);
     int number=0;
     if(rank==0){
-        number=-1;
+        number=2523;
         MPI_Send(&number,1,MPI_INT,1,0,MPI_COMM_WORLD);
     }
     else if(rank==1){
